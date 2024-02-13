@@ -1,0 +1,13 @@
+let User = {
+    name:"Gerald",
+    age:27,
+    gender:"pilesos",
+    setAge(newAge)
+    {
+        age = newAge
+    },
+    pens()
+    {
+        return(60 - this.age)
+    }
+}
