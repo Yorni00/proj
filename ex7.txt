@@ -1,0 +1,18 @@
+let array5 = [-1, 1,-1, 1,-1, 1,-1, 1,-1, 1,-1]
+let positive = 0
+let negative = 0
+
+for (let n = 0; n < array5.length; n++)
+{
+    if (array5[n] > 0)
+    {
+        positive++
+    }
+    else
+    {
+        negative++
+    }
+    
+}
+pr(positive)
+pr(negative)

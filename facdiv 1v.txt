@@ -1,0 +1,59 @@
+function facdiv(a, b)
+{
+    if (a >= b)
+    {
+        let aa = []
+        let bb = []
+        let ab = [aa, bb]
+        let q = 1
+
+        if (aa != null)
+        {
+            for (let n = 1; n <= a; n++)
+            {
+                aa[n - 1] = n;
+            }
+        }
+
+        if (bb != null)
+        {
+            for (let n = 1; n <= b; n++)
+            {
+                bb[n - 1] = n;
+            }
+        }
+
+        for (let n = 0; aa[n] == bb[n]; n++)
+        {
+            aa[n] = 0
+            bb[n] = 0
+        }
+
+        cout(ab)
+        
+        for (let n = 0; n < a; n++)
+        {
+            if (aa[n] == 0)
+            {
+                cout("aa[n] = 0")
+                continue
+            }
+            else if (aa[n] > 0)
+            {
+                cout(aa[n])
+                q *= aa[n]
+            }
+            else
+            {
+                cout("break")
+            }
+        }
+
+        cout(q)
+        return q
+    }
+    else
+    {
+        return -1
+    }
+}

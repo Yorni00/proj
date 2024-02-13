@@ -1,0 +1,18 @@
+function pr (text)
+{
+    console.log(text)
+}
+
+let array3 = [1, 2, 3, 11, 21, 121, 21, 19,-10, 5, 99]
+sum = 0
+
+for (let n = 0; n < array3.length; n++)
+{
+    if (array3[n] <= 20)
+    {
+        sum += array3[n]
+        pr('el = ' + array3[n])
+        pr('sum: ' + sum)
+    }
+}
+pr('total sum = ' + sum)

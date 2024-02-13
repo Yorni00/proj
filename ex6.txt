@@ -1,0 +1,13 @@
+let array4 = [3, 3, 3, 4, 3, 5, 5, 4, 3, 4, 5, 4, 3, 5, 5]
+let ar4 = array4
+let ar4l = ar4.length
+let couter = 0
+
+for (let n = 0; n < ar4l; n++)
+{
+    if (ar4[n] == 4 || ar4[n] == 5)
+    {
+        couter++
+    }
+}
+pr(couter)
